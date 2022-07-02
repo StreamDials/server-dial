@@ -25,6 +25,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-import: ^2.26.0
   eslint-plugin-jest: ^26.5.3
+  eslint-plugin-prettier: ^4.2.1
   eslint-plugin-security: ^1.5.0
   express: ^4.18.1
   express-flash: ^0.0.2
@@ -97,6 +98,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.18.0
   eslint-plugin-import: 2.26.0_eslint@8.18.0
   eslint-plugin-jest: 26.5.3_h5rmscbyl53eydiizqdzcegpgy
+  eslint-plugin-prettier: 4.2.1_xu6ewijrtliw5q5lksq5uixwby
   eslint-plugin-security: 1.5.0
   jest: 28.1.1_@types+node@18.0.0
   nodemon: 2.0.18
@@ -2203,6 +2205,23 @@ packages:
       - typescript
     dev: true
 
+  /eslint-plugin-prettier/4.2.1_xu6ewijrtliw5q5lksq5uixwby:
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      eslint: '>=7.28.0'
+      eslint-config-prettier: '*'
+      prettier: '>=2.0.0'
+    peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 8.18.0
+      eslint-config-prettier: 8.5.0_eslint@8.18.0
+      prettier: 2.7.1
+      prettier-linter-helpers: 1.0.0
+    dev: true
+
   /eslint-plugin-security/1.5.0:
     resolution: {integrity: sha512-hAFVwLZ/UeXrlyVD2TDarv/x00CoFVpaY0IUZhKjPjiFxqkuQVixsK4f2rxngeQOqSxi6OUjzJM/jMwKEVjJ8g==}
     dependencies:
@@ -2436,6 +2455,10 @@ packages:
 
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+    dev: true
+
+  /fast-diff/1.2.0:
+    resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
     dev: true
 
   /fast-glob/3.2.11:
@@ -4136,6 +4159,13 @@ packages:
   /prepend-http/2.0.0:
     resolution: {integrity: sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==}
     engines: {node: '>=4'}
+    dev: true
+
+  /prettier-linter-helpers/1.0.0:
+    resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      fast-diff: 1.2.0
     dev: true
 
   /prettier/2.7.1:
