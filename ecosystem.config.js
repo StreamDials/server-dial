@@ -22,8 +22,8 @@ module.exports = {
       env: {
         // environment variable
         PORT: 3000,
-        NODE_ENV: 'production',
-      },
+        NODE_ENV: 'production'
+      }
     },
     {
       name: 'dev', // pm2 start App name
@@ -42,9 +42,9 @@ module.exports = {
       env: {
         // environment variable
         PORT: 3000,
-        NODE_ENV: 'development',
-      },
-    },
+        NODE_ENV: 'development'
+      }
+    }
   ],
   deploy: {
     production: {
@@ -53,7 +53,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:repo.git',
       path: 'dist/server.js',
-      'post-deploy': 'npm install && npm run build && pm2 reload ecosystem.config.js --only prod',
-    },
-  },
-};
+      'post-deploy': 'npm install && npm run build && pm2 reload ecosystem.config.js --only prod'
+    }
+  }
+}
