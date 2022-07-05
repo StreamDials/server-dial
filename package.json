@@ -9,7 +9,9 @@
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write 'src/**/*.ts'"
+    "format": "prettier --write 'src/**/*.ts'",
+    "standard": "standard",
+    "standard:fix": "standard --fix"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +21,7 @@
   },
   "dependencies": {
     "body-parser": "^1.20.0",
+    "class-validator": "^0.13.2",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
