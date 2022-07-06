@@ -50,6 +50,7 @@
     "swagger-ui-express": "^4.4.0",
     "tsoa": "^4.1.0",
     "typedi": "^0.10.0",
+    "validator": "^13.7.0",
     "winston": "^3.8.0",
     "winston-daily-rotate-file": "^4.7.1"
   },
