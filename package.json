@@ -20,6 +20,7 @@
     "outDir": "./dist"
   },
   "dependencies": {
+    "bluebird": "^3.7.2",
     "body-parser": "^1.20.0",
     "celebrate": "^15.0.1",
     "class-validator": "^0.13.2",
